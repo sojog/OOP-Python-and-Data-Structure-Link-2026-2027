@@ -1,10 +1,11 @@
-# Mai multi studenti = CLASA
+# Mai multi studenti = o grupa de studenti
 
 class Student:
     def __init__(self,nume, note: list):
         self.nume = nume
         self.note = note
 
+    # Decoratorul property transforma o metoda intr-un aribut
     @property    
     def medie_gen(self):
         if not self.note: return 0
@@ -36,7 +37,7 @@ class GrupaStudenti:
 if __name__ == "__main__":
     alin = Student("Alin", [10, 5, 6, 7, 8])
     print("Alin are media", alin.medie_gen)
-    
+
     maria = Student("Maria", [6, 7, 9, 10])
     print("maria are media", maria.medie_gen)
 

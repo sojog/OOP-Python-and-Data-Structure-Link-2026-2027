@@ -1,5 +1,5 @@
 
-# Mostenire - Animal se mai numeste clasa de baza
+# Mostenire - Animal se mai numeste clasa de baza / clasa parinte 
 class Animal:
     def __init__(self, varsta, greutate):
         if varsta not in range(200):
@@ -12,10 +12,12 @@ class Animal:
     def __str__(self):
         return f"Animalul are {self.varsta} ani si {self.greutate} kg"
 
+# Caine - este clasa derivata / clasa copil
 class Pisica(Animal):
     pass
 
-# Caine - este clasa derivata
+
+# Caine - este clasa derivata / clasa copil
 class Caine(Animal):
     # Am suprascris __init__
     def __init__(self, varsta, greutate, nume):
