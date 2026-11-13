@@ -18,7 +18,7 @@ class Televizor:
 tv1 = Televizor("LG", 138, "23718")
 print(tv1.marca)
 print(tv1._diagonala)
-print(tv1._Televizor__serie)
+print(tv1._Televizor__serie) # Desi se pot accesa proprietati private !!!! NU ESTE RECOMANDAT !!!!!
 
 print(tv1.identificator)
 print(tv1.identificator)
@@ -28,7 +28,8 @@ tv1._diagonala = 169
 tv1._Televizor__serie = "242164782"
 print(tv1.marca)
 print(tv1._diagonala)
-print(tv1._Televizor__serie)
+print(tv1._Televizor__serie)  # Desi se pot accesa proprietati private !!!! NU ESTE RECOMANDAT !!!!!
+
 
 
 tv1.identificator = "jdhasdaksjh"

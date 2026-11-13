@@ -37,9 +37,11 @@ class Student:
     def compare_grades(self, other):
         return self.medie_gen > other.medie_gen
     
+    # Va fi folosit in obiect1 < obiect2 (gt - greater than)
     def __gt__(self,other):
         return self.medie_gen > other.medie_gen
-    
+
+    # Va fi folosit in obiect1 < obiect2 (lt - less than)
     def __lt__(self,other):
         return self.medie_gen < other.medie_gen
 
