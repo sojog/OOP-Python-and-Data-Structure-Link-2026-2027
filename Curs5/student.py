@@ -43,7 +43,8 @@ class Student:
     def __lt__(self,other):
         return self.medie_gen < other.medie_gen
 
-
+# Variabila specială __name__: Este o variabilă globală pe care interpretorul Python o creează automat pentru fiecare modul.
+# Import ca modul: Când alt fișier importă scriptul, Python setează variabila __name__ la numele fișierului
 if __name__ == "__main__":
 
     student1 = Student("Mihai", [10,8,6,9])
